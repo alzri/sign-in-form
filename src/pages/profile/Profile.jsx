@@ -12,7 +12,7 @@ function Profile () {
 
     return (
         <div className="content-card">
-            <MainTitle title="Dobrodošao u Nutricionist Marko!" />
+            <MainTitle title="Dobrodošao <br /> u Nutricionist Marko!" />
             <Description desc="Lako upravljaj svojim računom na jednom mjestu!" />
 
             <div className='form--submit-buttons'>

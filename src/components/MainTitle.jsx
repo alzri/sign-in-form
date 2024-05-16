@@ -1,9 +1,7 @@
-function MainTitle(props) {
+const MainTitle = ({ title }) => {
     return (
-        <>
-            <h1>{props.title}</h1>
-        </>
+        <h1 dangerouslySetInnerHTML={{ __html: title }} />
     );
-}
-
+  }
+  
 export default MainTitle;

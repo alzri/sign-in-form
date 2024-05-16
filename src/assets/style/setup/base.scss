@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    justify-content: center;
+    background-image: url('../../images/Nutri-bg.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    align-items: center;
+}
+
+#root {
+    width: 1440px;
+}
+
+header {
+    margin-top: var(--spacing-xl);
+}
+
+.content-card {
+    display: grid;
+    max-width: 496px;
+    width: 100%;
+    margin: 90px auto;
+    background: var(--background-color);
+    padding: var(--spacing-xxl);
+    border-radius: 16px;
+
+    h4 {
+        margin: var(--spacing-s) 0 0;
+    }
+}

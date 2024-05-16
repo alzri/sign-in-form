@@ -1,0 +1,20 @@
+.primary-link {
+    @extend p;
+    font-weight: 500;
+    color: var(--primary-link-color) !important;
+    text-decoration: none;
+    text-align: center;
+}
+
+.delete-link {
+    @extend .primary-link;
+    color: var(--delete-color) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-s);
+
+    &::before {
+        content: url('../../images/delete-icon.svg');
+    }
+}

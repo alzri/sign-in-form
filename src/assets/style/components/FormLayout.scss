@@ -1,0 +1,22 @@
+.form {
+    display: grid;
+    gap: var(--spacing-l);
+    margin-top: var(--spacing-xl);
+
+    &--email, &--password {
+        display: grid;
+        gap: var(--spacing-s);
+        margin: 0;
+
+        input {
+            padding: var(--spacing-m);
+            border: var(--border);
+            border-radius: 16px;
+        }
+    }
+
+    &--submit-buttons {
+        display: grid;
+        gap: var(--spacing-l);
+    }
+}

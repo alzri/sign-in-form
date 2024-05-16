@@ -51,7 +51,7 @@ function FormLayout() {
 
                 <div className='form--submit-buttons'>
                     <button type='submit' className={submitButtonClass}>Prijavi se</button>
-                    <Link to="/zaboravljena-lozinka" className='primary-link'>Zaboravljena lozinka?</Link>
+                    <Link to="/password-forgotten" className='primary-link'>Zaboravljena lozinka?</Link>
                 </div>
             </form>
         </>

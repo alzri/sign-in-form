@@ -1,11 +1,9 @@
 # Sign In form 
 
 Overview
-
 This project leverages React and SCSS/CSS to create a dynamic and stylish user authentication and profile management system. It provides functionalities for logging in, logging out, and deleting user profiles, ensuring a seamless user experience and efficient data management.
 
 Getting Started
-
 To integrate the React User Profile Management System into your project, follow these steps:
 
 Installation: Clone the repository to your local machine.
@@ -17,7 +15,6 @@ Testing: Thoroughly test the functionality to ensure a seamless user experience 
 Deployment: Deploy the integrated system to your production environment, following best practices for React applications.
 
 Dependencies
-
 React
 React Router 
 SCSS/CSS (with Node-sass for SCSS compilation)

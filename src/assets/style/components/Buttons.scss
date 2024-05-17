@@ -1,0 +1,19 @@
+.primary-button {
+    @extend p;
+    font-weight: 500 !important;
+    color: var(--white-text-color) !important;
+    border-radius: 16px;
+    border: none;
+    padding: var(--spacing-m) 0;
+    cursor: pointer;
+    margin-top: var(--spacing-xl);
+    
+
+    &.disable {
+        background: var(--primary-button-disable-color);
+    }
+
+    &.enable {
+        background: var(--primary-button-color);
+    }
+}

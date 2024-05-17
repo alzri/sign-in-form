@@ -12,7 +12,7 @@ function FormLayout() {
         if (email === 'test@test.com' && password === '123') {
             navigate('/profile');
         } else {
-            setError('Invalid email or password');
+            setError('Lozinka ili e-mail nisu točni');
         }
     }
 

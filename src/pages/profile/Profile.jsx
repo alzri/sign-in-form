@@ -11,15 +11,15 @@ function Profile () {
     }
 
     return (
-        <div className="content-card">
+        <>
             <MainTitle title="Dobrodošao <br /> u Nutricionist Marko!" />
             <Description desc="Lako upravljaj svojim računom na jednom mjestu!" />
 
             <div className='form--submit-buttons'>
                 <button type='submit' onClick={handleSignOut} className='primary-button disable'>Odjavi se</button>
-                <Link to="/zaboravljena-lozinka" className='delete-link'>Izbriši moj račun</Link>
+                <Link to="/" className='delete-link'>Izbriši moj račun</Link>
             </div>
-        </div>
+        </>
     );
 }
 

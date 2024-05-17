@@ -9,12 +9,13 @@ function PasswordForgotten() {
 
     const handleNewPassword = (e) => {
         e.preventDefault();
-        setEmail('');
-        navigate('/confirm');
+        if (email) {
+            navigate('/confirm');
+        }
     }
 
     return (
-        <div className="content-card">
+        <>
             <MainTitle title="Zaboravio/la si <br /> lozinku?" />
             <Description desc="Upiši e-mail adresu na koju želiš da ti pošaljemo link za ponovnu prijavu." />
             <form method="post" className='form' onSubmit={handleNewPassword}>
@@ -25,16 +26,17 @@ function PasswordForgotten() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Unesi svoj e-mail"
+                        name="email"
                         required
                     />
                 </p>
             </form>
-            
+
             <div className='form--submit-buttons'>
-                <button type='submit' className='primary-button enable'>Prijavi se</button>
+                <button type='submit' className='primary-button enable' onClick={handleNewPassword}>Prijavi se</button>
                 <Link to="/password-forgotten" className='primary-link'>Zaboravljena lozinka?</Link>
             </div>
-        </div>
+        </>
     );
 }
 
